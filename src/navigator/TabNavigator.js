@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Main from '../templates/Main';
+import Home from '../templates/Home';
 import StackNavigator from './StackNavigator';
 
 const Tab = createBottomTabNavigator();
@@ -9,7 +9,7 @@ const TabNavigator = () => {
 
     return(
         <Tab.Navigator>
-            <Tab.Screen name="Main" component={Main} />
+            <Tab.Screen name="Home" component={Home} />
             <Tab.Screen name="Stack" component={StackNavigator} />
         </Tab.Navigator>
     )

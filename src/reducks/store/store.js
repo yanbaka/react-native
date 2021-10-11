@@ -6,11 +6,13 @@ import {
 import thunk from 'redux-thunk';
 
 import { UsersReducer } from "../users/reducers";
+import { RouterReducer } from "../router/reducers";
 
 export default function createStore() {
     return reduxCreateStore(
         combineReducers({
-            users: UsersReducer
+            users: UsersReducer,
+            router: RouterReducer
         }),
         applyMiddleware(
             thunk
