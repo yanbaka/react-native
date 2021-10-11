@@ -12,8 +12,6 @@ const Main = () => {
     const uid = getUserId(selector)
     const username = getUserName(selector)
 
-    console.log(selector.users)
-  
     return (
       <View style={styles.container}>
         <Button
