@@ -16,7 +16,6 @@ export const stateChange = (event) => {
         };
         
         const currentRouteName = getCurrentRoute(event)
-        console.log(currentRouteName)
         dispatch(stateChangeAction({
             currentRouteName: currentRouteName
         }))

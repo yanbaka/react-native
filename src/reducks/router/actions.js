@@ -3,7 +3,7 @@ export const stateChangeAction = (routerState) => {
     return {
         type: "STATE_CHANGE",
         payload: {
-            currentRouteName: routerState.name
+            currentRouteName: routerState.currentRouteName
         }
     }
 }
