@@ -8,6 +8,10 @@ const initialState = {
     router: {
         currentRouteName: ""
     },
+    errorModal: {
+        isShow: false,
+        text: ""
+    }
 }
 
 export default initialState
