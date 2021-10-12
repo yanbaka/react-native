@@ -10,6 +10,9 @@ const StackNavigator = () => {
         <Stack.Navigator>
             <Stack.Screen
                 name="List" component={List}
+                options={{
+                    headerShown: false
+                }}
             />
             <Stack.Screen
                 name="Detail"

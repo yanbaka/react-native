@@ -10,13 +10,15 @@ const TabNavigator = () => {
     return(
         <Tab.Navigator>
             <Tab.Screen name="Home" component={Home} />
-            <Tab.Screen
-                name="Stack"
-                component={StackNavigator}
-                options={{
-                    headerShown: false
-                }}
-            />
+            <Tab.Group>
+                <Tab.Screen
+                    name="Stack"
+                    component={StackNavigator}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+            </Tab.Group>
         </Tab.Navigator>
     )
 }
